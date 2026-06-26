@@ -1,12 +1,10 @@
 @import 'variables';
 @import 'block/header';
-@import 'block/stars';
+@import 'block/nav';
 @import 'block/card';
+@import 'block/stars';
 @import 'block/catalog';
 
 body {
   margin: 0;
-  font-weight: 400;
-  letter-spacing: 0%;
-  font-family: Roboto, Arial, sans-serif;
 }
