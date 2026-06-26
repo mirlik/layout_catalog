@@ -30,8 +30,10 @@
     line-height: 18px;
     color: $color-text-main;
 
-    &:hover &__content-title {
-      color: $color-text-main-hovered;
+    &:hover {
+      .card__content-title {
+        color: $color-text-main-hovered;
+      }
     }
   }
 
