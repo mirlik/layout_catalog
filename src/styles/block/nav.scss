@@ -1,15 +1,15 @@
 .nav {
   &__list {
-    list-style: none;
     display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
   }
 
   &__link {
-    text-transform: uppercase;
-    position: relative;
     display: flex;
+    position: relative;
+    text-transform: uppercase;
     align-items: center;
     justify-content: center;
     height: 60px;
