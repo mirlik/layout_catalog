@@ -10,9 +10,6 @@
   font-family: $font-main;
 
   transition: 0.3s;
-  &:hover {
-    transform: scale(1.2);
-  }
 
   &__img {
     display: block;
@@ -24,30 +21,22 @@
   &__content-title {
     margin: 0;
     margin-top: 40px;
-
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
     color: $color-text-main;
-
-    &:hover {
-      .card__content-title {
-        color: $color-text-main-hovered;
-      }
-    }
   }
 
   &__content-code {
     margin: 0;
     margin-top: 4px;
-
     font-size: 10px;
     font-weight: 400;
     line-height: 14px;
     color: $color-text-muted;
   }
 
-  &__revies {
+  &__reviews { 
     font-size: 10px;
     font-weight: 400;
     line-height: 14px;
@@ -104,10 +93,19 @@
     background-color: $color-primary;
 
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
       color: $color-primary;
       background-color: white;
     }
+  }
+}
+
+/* Стили для hover вынесены после основного блока */
+.card:hover {
+  transform: scale(1.2);
+  .card__content-title {
+    color: $color-text-main-hovered;
   }
 }
